@@ -377,66 +377,6 @@ const heroCollage = document.querySelector('.hero-collage');
 
 let selectedYear = 1999;
 
-function getInitialYear() {
-    const hashMatch = window.location.hash.match(/year-(\d{4})/);
-    return hashMatch ? Number(hashMatch[1]) : selectedYear;
-}
-
-function syncYearHash(year) {
-    const nextHash = `#year-${year}`;
-    if (window.location.hash !== nextHash) {
-        history.replaceState(null, '', nextHash);
-    }
-}
-
-function setSelectedYear(year, options = {}) {
-    selectedYear = year;
-    syncYearHash(year);
-    render();
-
-    if (options.scrollToDetails) {
-        document.getElementById('games').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
-
-function getImageCandidates(imagePath) {
-    const candidates = [imagePath];
-    const extensionMatch = imagePath.match(/\.(jpg|jpeg|png|webp|svg)$/i);
-
-    if (extensionMatch) {
-        const stem = imagePath.slice(0, -extensionMatch[0].length);
-        const fallbackExts = ['svg', 'jpg', 'jpeg', 'png', 'webp'];
-
-        fallbackExts.forEach((ext) => {
-            if (ext.toLowerCase() !== extensionMatch[1].toLowerCase()) {
-                candidates.push(`${stem}.${ext}`);
-            }
-        });
-    }
-
-    return [...new Set(candidates)];
-}
-
-function updateActiveNav() {
-    const scrollPosition = window.scrollY + 140;
-    const navLinks = Array.from(document.querySelectorAll('.menu a'));
-
-    navLinks.forEach((link) => {
-        const targetId = link.getAttribute('href')?.replace('#', '');
-        const section = targetId ? document.getElementById(targetId) : null;
-
-        if (!section) {
-            return;
-        }
-
-        const top = section.offsetTop;
-        const bottom = top + section.offsetHeight;
-        link.classList.toggle('active', scrollPosition >= top && scrollPosition < bottom);
-    });
-}
-
-selectedYear = getInitialYear();
-
 function createYearButtons() {
     games.forEach((game) => {
         const button = document.createElement('button');
@@ -445,7 +385,9 @@ function createYearButtons() {
         button.textContent = game.year;
 
         button.addEventListener('click', () => {
-            setSelectedYear(game.year, { scrollToDetails: true });
+            selectedYear = game.year;
+            render();
+            document.getElementById('games').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
 
         yearGrid.appendChild(button);
@@ -477,7 +419,7 @@ function renderResults() {
     const visibleGames = getVisibleGames(searchInput.value);
 
     if (visibleGames.length === 0) {
-        resultsList.innerHTML = '<div class="result-card empty-state"><strong>No matches found</strong><span>Try another genre, studio, or year.</span></div>';
+        resultsList.innerHTML = '<div class="result-card"><strong>No matches found</strong><span>Try another genre, studio, or year.</span></div>';
         resultsSummary.textContent = 'No results';
         return;
     }
@@ -496,7 +438,8 @@ function renderResults() {
 
     resultsList.querySelectorAll('.result-card').forEach((button) => {
         button.addEventListener('click', () => {
-            setSelectedYear(Number(button.getAttribute('data-year')));
+            selectedYear = Number(button.getAttribute('data-year'));
+            render();
         });
     });
 }
@@ -513,13 +456,11 @@ function renderGame() {
     const previousGame = currentIndex > 0 ? games[currentIndex - 1] : null;
     const nextGame = currentIndex < games.length - 1 ? games[currentIndex + 1] : null;
 
-    const imageCandidates = getImageCandidates(game.image);
-
     gameContainer.innerHTML = `
         <div class="detail-shell">
             <div class="detail-top">
                 <div class="detail-hero">
-                    <img src="${imageCandidates[0]}" alt="${game.title}" data-image-candidates="${imageCandidates.join('|')}" data-image-index="0">
+                    <img src="${game.image}" alt="${game.title}">
                     <div class="detail-overlay">
                         <div class="detail-badges">
                             <span class="meta-pill">${game.year}</span>
@@ -588,24 +529,6 @@ function renderGame() {
         </div>
     `;
 
-    const heroImage = gameContainer.querySelector('.detail-hero img');
-
-    if (heroImage) {
-        heroImage.addEventListener('error', () => {
-            const candidates = (heroImage.getAttribute('data-image-candidates') || '')
-                .split('|')
-                .filter(Boolean);
-            const nextIndex = Number(heroImage.dataset.imageIndex || 0) + 1;
-
-            if (nextIndex < candidates.length) {
-                heroImage.dataset.imageIndex = String(nextIndex);
-                heroImage.src = candidates[nextIndex];
-            } else {
-                heroImage.classList.add('is-fallback');
-            }
-        });
-    }
-
     gameContainer.querySelectorAll('.nav-button').forEach((button) => {
         button.addEventListener('click', () => {
             const direction = button.getAttribute('data-direction');
@@ -614,18 +537,15 @@ function renderGame() {
             const targetGame = games[targetIndex];
 
             if (targetGame) {
-                setSelectedYear(targetGame.year);
+                selectedYear = targetGame.year;
+                render();
             }
         });
     });
 }
 
 function renderYearButtons() {
-    document.querySelectorAll('.year').forEach((button) => {
-        const isActive = Number(button.textContent) === selectedYear;
-        button.classList.toggle('active', isActive);
-        button.setAttribute('aria-pressed', String(isActive));
-    });
+    document.querySelectorAll('.year').forEach((button) => button.classList.toggle('active', Number(button.textContent) === selectedYear));
 }
 
 function render() {
@@ -642,27 +562,8 @@ exploreBtn.addEventListener('click', () => {
     document.getElementById('years').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
-document.addEventListener('keydown', (event) => {
-    const target = event.target;
-    if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) {
-        return;
-    }
-
-    const currentIndex = games.findIndex((entry) => entry.year === selectedYear);
-    if (event.key === 'ArrowRight') {
-        const nextGame = games[currentIndex + 1] || games[0];
-        setSelectedYear(nextGame.year);
-    }
-
-    if (event.key === 'ArrowLeft') {
-        const prevGame = games[currentIndex - 1] || games[games.length - 1];
-        setSelectedYear(prevGame.year);
-    }
-});
-
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 20);
-    updateActiveNav();
 
     if (hero && heroCollage) {
         const offset = window.scrollY * 0.08;
@@ -671,7 +572,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('mousemove', (event) => {
-    if (!hero || window.matchMedia('(hover: none)').matches) {
+    if (!hero) {
         return;
     }
 
@@ -686,5 +587,4 @@ window.addEventListener('mouseleave', () => {
     }
 });
 
-updateActiveNav();
 render();
