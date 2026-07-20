@@ -11,11 +11,6 @@
     --glow: 0 0 24px rgba(57, 215, 255, 0.32);
 }
 
-:focus-visible {
-    outline: 2px solid rgba(57, 215, 255, 0.95);
-    outline-offset: 3px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -150,8 +145,7 @@ body .page-rays {
     border-radius: 999px;
 }
 
-.menu a:hover,
-.menu a.active {
+.menu a:hover {
     background: rgba(57, 215, 255, 0.16);
     color: var(--accent);
     box-shadow: 0 0 18px rgba(57, 215, 255, 0.2);
@@ -323,7 +317,6 @@ body .page-rays {
 
 section {
     padding: 110px 10%;
-    scroll-margin-top: 120px;
 }
 
 section h2 {
@@ -386,10 +379,6 @@ section h2 {
     background: linear-gradient(145deg, rgba(10, 33, 68, 0.95), rgba(18, 84, 135, 0.9));
     border-color: var(--accent);
     box-shadow: 0 20px 34px rgba(57, 215, 255, 0.24);
-}
-
-.year:focus-visible {
-    transform: translateY(-4px) scale(1.02);
 }
 
 .year:hover::before,
@@ -456,11 +445,6 @@ section h2 {
     cursor: pointer;
     transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
     text-align: left;
-    backdrop-filter: blur(10px);
-}
-
-.result-card.empty-state {
-    cursor: default;
 }
 
 .result-card:hover,
@@ -538,11 +522,6 @@ section h2 {
     display: block;
     transform: scale(1.02);
     border-radius: 28px;
-    background: linear-gradient(135deg, rgba(57, 215, 255, 0.12), rgba(111, 124, 255, 0.18));
-}
-
-.detail-hero img.is-fallback {
-    filter: grayscale(0.1) saturate(0.75);
 }
 
 .detail-overlay {
@@ -764,15 +743,6 @@ footer {
     50% {
         transform: translateY(-18px) scale(1.06);
         opacity: 1;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
     }
 }
 
