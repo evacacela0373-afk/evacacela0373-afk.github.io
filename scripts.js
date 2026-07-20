@@ -1,157 +1,157 @@
 const games = [
     {
         year: 1999,
-        title: 'Soulcalibur',
-        studio: 'Namco',
-        creator: 'Project Soul',
-        image: 'assets/covers/1999-soulcalibur.jpg',
-        releaseDate: 'March 3, 1999',
-        genres: ['Fighting', 'Action'],
-        platforms: ['Arcade', 'Dreamcast'],
-        rating: '8.9/10',
-        description: 'Soulcalibur reinvented 3D weapons-based combat with elegant animation, memorable characters, and one of the most stylish fighting games ever made.',
-        whyItMatters: 'It helped define the arcade-era fighting renaissance and became a benchmark for visual polish and accessibility.',
-        highlight: 'Its fluid weapon combat and cinematic presentation set a new standard for the genre.'
+        title: 'Dino Crisis',
+        studio: 'Capcom',
+        creator: 'Shinji Mikami',
+        image: 'assets/covers/1999-dino-crisis.jpg',
+        releaseDate: 'July 1, 1999',
+        genres: ['Action-adventure', 'Survival horror'],
+        platforms: ['PlayStation'],
+        rating: '8.1/10',
+        description: 'Dino Crisis brought tense survival horror to a prehistoric setting with quick action, limited resources, and a memorable sense of panic.',
+        whyItMatters: 'It helped expand the survival-horror formula into a more cinematic, action-forward experience.',
+        highlight: 'Its combination of dinosaurs, tight pacing, and escalating danger made every room feel dangerous.'
     },
     {
         year: 2000,
-        title: 'The Sims',
-        studio: 'Maxis',
-        creator: 'Will Wright',
-        image: 'assets/covers/2000-the-sims.jpg',
-        releaseDate: 'February 4, 2000',
-        genres: ['Life Sim', 'Strategy'],
-        platforms: ['Windows', 'Mac'],
-        rating: '8.7/10',
-        description: 'The Sims let players build homes, shape personalities, and create entire virtual lives in a sandbox that felt deeply personal.',
-        whyItMatters: 'It transformed simulation games into a global phenomenon and popularized a new kind of open-ended storytelling.',
-        highlight: 'Its modular lifestyle systems made player-driven stories feel effortless and irresistible.'
+        title: 'Spyro: Year of the Dragon',
+        studio: 'Insomniac Games',
+        creator: 'Craig Stitt',
+        image: '',
+        releaseDate: 'October 24, 2000',
+        genres: ['Platformer', 'Adventure'],
+        platforms: ['PlayStation'],
+        rating: '8.6/10',
+        description: 'Spyro: Year of the Dragon refined the mascot-platformer formula with bright worlds, collectible challenges, and a lighter, more playful tone.',
+        whyItMatters: 'It showed how a polished 3D platformer could stay accessible while still feeling packed with personality.',
+        highlight: 'Its colorful levels and charming character design made it one of the most approachable games of its era.'
     },
     {
         year: 2001,
-        title: 'Halo: Combat Evolved',
-        studio: 'Bungie',
-        creator: 'Jason Jones',
-        image: 'assets/covers/2001-halo-combat-evolved.jpg',
-        releaseDate: 'November 15, 2001',
-        genres: ['First-person shooter', 'Sci-fi'],
-        platforms: ['Xbox', 'Windows'],
-        rating: '9.5/10',
-        description: 'Halo: Combat Evolved delivered a cinematic sci-fi campaign and a refined control scheme that helped define the modern console shooter.',
-        whyItMatters: 'It became the face of Xbox and pushed shooters toward more accessible, console-friendly design.',
-        highlight: 'Its ring-world setting and polished gunplay made every mission feel like a blockbuster event.'
+        title: 'Silent Hill 2',
+        studio: 'Team Silent',
+        creator: 'Keiichiro Toyama',
+        image: 'assets/covers/2001-silent-hill-2.jpg',
+        releaseDate: 'September 24, 2001',
+        genres: ['Survival horror', 'Psychological'],
+        platforms: ['PlayStation 2'],
+        rating: '9.3/10',
+        description: 'Silent Hill 2 became a landmark in psychological horror with a haunting atmosphere, emotional storytelling, and deeply unsettling imagery.',
+        whyItMatters: 'It raised the emotional and narrative ambition of horror games and pushed the genre toward greater maturity.',
+        highlight: 'Its foggy town and personal themes turned every encounter into a deeply reflective experience.'
     },
     {
         year: 2002,
-        title: 'Metroid Prime',
-        studio: 'Retro Studios',
-        creator: 'Mark Pacini',
-        image: 'assets/covers/2002-metroid-prime.jpg',
-        releaseDate: 'November 17, 2002',
-        genres: ['Action-adventure', 'Sci-fi'],
-        platforms: ['GameCube', 'Wii'],
-        rating: '9.4/10',
-        description: 'Metroid Prime successfully translated the exploration-led structure of 2D Metroid into a breathtaking first-person adventure.',
-        whyItMatters: 'It proved that genre-defining franchises could thrive in new perspectives without losing their identity.',
-        highlight: 'Its atmospheric environments and intricate map design made exploration feel magical.'
+        title: 'Kingdom Hearts',
+        studio: 'Square',
+        creator: 'Tetsuya Nomura',
+        image: 'assets/covers/2002-kingdom-hearts.jpg',
+        releaseDate: 'March 28, 2002',
+        genres: ['Action RPG', 'Fantasy'],
+        platforms: ['PlayStation 2'],
+        rating: '8.8/10',
+        description: 'Kingdom Hearts merged Disney-inspired worlds with action combat and an emotional original story that resonated with a huge audience.',
+        whyItMatters: 'It helped define the crossover RPG trend and made squarely emotional storytelling feel mainstream.',
+        highlight: 'Its blend of beloved worlds and original characters gave it a signature identity from the start.'
     },
     {
         year: 2003,
-        title: 'The Legend of Zelda: The Wind Waker',
-        studio: 'Nintendo EAD',
-        creator: 'Eiji Aonuma',
-        image: 'assets/covers/2003-the-legend-of-zelda-the-wind-waker.jpg',
-        releaseDate: 'December 13, 2003',
-        genres: ['Action-adventure', 'Fantasy'],
-        platforms: ['GameCube'],
-        rating: '9.2/10',
-        description: 'The Wind Waker embraced a painterly art style and a rich sailing adventure that reimagined Zelda for a new generation.',
-        whyItMatters: 'It showed how visual identity could shape the emotional tone of a franchise without sacrificing depth.',
-        highlight: 'Its oceanic exploration and heartfelt story made every voyage feel legendary.'
+        title: 'Fatal Frame II: Crimson Butterfly',
+        studio: 'Tecmo',
+        creator: 'Makoto Shibata',
+        image: 'assets/covers/2003-fatal-frame-ii-crimson-butterfly.jpg',
+        releaseDate: 'December 12, 2003',
+        genres: ['Survival horror', 'Psychological'],
+        platforms: ['PlayStation 2'],
+        rating: '8.5/10',
+        description: 'Fatal Frame II built tension through supernatural encounters, unsettling visuals, and a slow-burning sense of dread.',
+        whyItMatters: 'It demonstrated how psychological horror could be made more intimate and immersive through restraint.',
+        highlight: 'Its haunted village setting and camera-driven scares made every exploration feel precarious.'
     },
     {
         year: 2004,
-        title: 'Halo 2',
-        studio: 'Bungie',
-        creator: 'Jason Jones',
-        image: 'assets/covers/2004-halo-2.jpg',
-        releaseDate: 'November 9, 2004',
-        genres: ['First-person shooter', 'Sci-fi'],
-        platforms: ['Xbox'],
-        rating: '9.3/10',
-        description: 'Halo 2 expanded the original with a more expansive campaign, new weapons, and a richer multiplayer structure.',
-        whyItMatters: 'It helped cement online console gaming as a mainstream social experience.',
-        highlight: 'Its multiplayer mode became a benchmark for online console competition.'
+        title: 'Metal Gear Solid 3: Snake Eater',
+        studio: 'Konami Computer Entertainment Japan',
+        creator: 'Hideo Kojima',
+        image: 'assets/covers/2004-metal-gear-solid-3-snake-eater.jpg',
+        releaseDate: 'November 17, 2004',
+        genres: ['Action-adventure', 'Stealth'],
+        platforms: ['PlayStation 2'],
+        rating: '9.2/10',
+        description: 'Metal Gear Solid 3: Snake Eater returned the series to its roots with a tense jungle setting and a more grounded stealth experience.',
+        whyItMatters: 'It deepened the series’ lore while sharpening its stealth mechanics and emotional storytelling.',
+        highlight: 'Its survivalist tone and memorable boss encounters made it one of the most acclaimed stealth games ever made.'
     },
     {
         year: 2005,
-        title: 'Resident Evil 4',
-        studio: 'Capcom',
-        creator: 'Shinji Mikami',
-        image: 'assets/covers/2005-resident-evil-4.jpg',
-        releaseDate: 'January 11, 2005',
-        genres: ['Action', 'Survival horror'],
-        platforms: ['GameCube', 'PS2', 'Wii'],
-        rating: '9.6/10',
-        description: 'Resident Evil 4 redefined survival horror with blazing action, cinematic camera work, and a relentless village of threats.',
-        whyItMatters: 'It pushed horror toward a more kinetic style while keeping tension at the center.',
-        highlight: 'Its over-the-shoulder camera became one of the most influential design choices in modern action games.'
+        title: 'Shadow of the Colossus',
+        studio: 'Team Ico',
+        creator: 'Fumito Ueda',
+        image: '',
+        releaseDate: 'October 18, 2005',
+        genres: ['Action-adventure', 'Fantasy'],
+        platforms: ['PlayStation 2'],
+        rating: '9.5/10',
+        description: 'Shadow of the Colossus delivered a sparse, majestic adventure in which each giant encounter felt like a personal ritual.',
+        whyItMatters: 'It proved that minimalism and scale could create a profoundly emotional experience.',
+        highlight: 'Its giant-scale encounters and quiet atmosphere made every journey feel intimate and monumental.'
     },
     {
         year: 2006,
-        title: 'The Legend of Zelda: Twilight Princess',
-        studio: 'Nintendo EAD',
-        creator: 'Eiji Aonuma',
-        image: 'assets/covers/2006-the-legend-of-zelda-twilight-princess.jpg',
-        releaseDate: 'November 19, 2006',
-        genres: ['Action-adventure', 'Fantasy'],
-        platforms: ['GameCube', 'Wii'],
-        rating: '9.1/10',
-        description: 'Twilight Princess delivered a darker, more mature take on Zelda with impressive scale and emotional storytelling.',
-        whyItMatters: 'It widened the franchise’s tonal range while preserving the series’ core sense of wonder.',
-        highlight: 'Its twilight mechanics introduced a striking visual and thematic twist.'
+        title: 'Final Fantasy XII',
+        studio: 'Square Enix',
+        creator: 'Hiroshi Minagawa',
+        image: 'assets/covers/2006-final-fantasy-xii.jpg',
+        releaseDate: 'March 16, 2006',
+        genres: ['JRPG', 'Fantasy'],
+        platforms: ['PlayStation 2'],
+        rating: '8.7/10',
+        description: 'Final Fantasy XII introduced a more tactical battle system and an ambitious world built around political intrigue and a richly layered setting.',
+        whyItMatters: 'It pushed the series toward a more strategic style while keeping its signature scale and spectacle intact.',
+        highlight: 'Its gambit system made combat feel dynamic and highly readable from the start.'
     },
     {
         year: 2007,
-        title: 'BioShock',
-        studio: 'Irrational Games',
-        creator: 'Ken Levine',
-        image: 'assets/covers/2007-bioshock.jpg',
-        releaseDate: 'August 21, 2007',
-        genres: ['First-person shooter', 'Story-rich'],
-        platforms: ['Windows', 'PS3', 'Xbox 360'],
-        rating: 9.4,
-        description: 'BioShock combined atmospheric worldbuilding, philosophical themes, and a compelling first-person combat loop inside Rapture.',
-        whyItMatters: 'It elevated narrative-driven shooters into a new era of immersive storytelling.',
-        highlight: 'Its twisting plot and environmental storytelling made every discovery feel important.'
+        title: 'Persona 3 FES',
+        studio: 'Atlus',
+        creator: 'Katsura Hashino',
+        image: '',
+        releaseDate: 'April 19, 2007',
+        genres: ['JRPG', 'Social sim'],
+        platforms: ['PlayStation 2'],
+        rating: '9.0/10',
+        description: 'Persona 3 FES blended dungeon crawling with school-life simulation in a story that balanced everyday routine with supernatural drama.',
+        whyItMatters: 'It helped define the modern social-RPG structure that later games would expand upon.',
+        highlight: 'Its calendar-based progression gave the game a strong sense of time, rhythm, and consequence.'
     },
     {
         year: 2008,
-        title: 'Grand Theft Auto IV',
-        studio: 'Rockstar North',
-        creator: 'Dan Houser',
-        image: 'assets/covers/2008-grand-theft-auto-iv.jpg',
-        releaseDate: 'April 29, 2008',
-        genres: ['Action-adventure', 'Open world'],
-        platforms: ['PS3', 'Xbox 360', 'Windows'],
-        rating: '9.5/10',
-        description: 'GTA IV brought a grittier, more grounded version of Liberty City to life with a deeply character-driven narrative.',
-        whyItMatters: 'It pushed open-world games toward stronger realism, emotional maturity, and social complexity.',
-        highlight: 'Its lived-in city and morally messy missions felt dramatically richer than ever before.'
+        title: 'Metal Gear Solid 4: Guns of the Patriots',
+        studio: 'Kojima Productions',
+        creator: 'Hideo Kojima',
+        image: 'assets/covers/2008-metal-gear-solid-4-guns-of-the-patriots.jpg',
+        releaseDate: 'June 12, 2008',
+        genres: ['Action-adventure', 'Stealth'],
+        platforms: ['PlayStation 3'],
+        rating: '9.0/10',
+        description: 'Metal Gear Solid 4 delivered a towering finale to Solid Snake’s story with cinematic presentation, refined stealth, and huge production scope.',
+        whyItMatters: 'It showcased how action games could merge spectacle, politics, and character work into a single, coherent experience.',
+        highlight: 'Its cinematic set pieces and memorable boss fights gave the series a grand closing chapter.'
     },
     {
         year: 2009,
         title: 'Uncharted 2: Among Thieves',
         studio: 'Naughty Dog',
         creator: 'Amy Hennig',
-        image: 'assets/covers/2009-uncharted-2-among-thieves.jpg',
+        image: '',
         releaseDate: 'October 13, 2009',
         genres: ['Action-adventure', 'Third-person'],
-        platforms: ['PS3'],
+        platforms: ['PlayStation 3'],
         rating: '9.5/10',
-        description: 'Uncharted 2 delivered adventure set pieces and a polished cinematic flow that made action-platforming feel effortless.',
-        whyItMatters: 'It helped define modern blockbuster gaming on consoles and raised the bar for interactive spectacle.',
-        highlight: 'Its climbing, gunplay, and pacing made every chapter feel like a movie blockbuster.'
+        description: 'Uncharted 2: Among Thieves set a new benchmark for cinematic action-adventure with fluid movement, unforgettable set pieces, and a confident sense of momentum.',
+        whyItMatters: 'It became a touchstone for blockbuster game design and helped define modern action-adventure pacing.',
+        highlight: 'Its climbing, gunplay, and scripted spectacle made every scene feel larger than life.'
     },
     {
         year: 2010,
@@ -161,39 +161,39 @@ const games = [
         image: 'assets/covers/2010-red-dead-redemption.jpg',
         releaseDate: 'May 18, 2010',
         genres: ['Action-adventure', 'Western'],
-        platforms: ['PS3', 'Xbox 360'],
+        platforms: ['PlayStation 3', 'Xbox 360'],
         rating: '9.6/10',
-        description: 'Red Dead Redemption created a vast, sun-drenched western with an unforgettable antihero and a deeply human story.',
-        whyItMatters: 'It demonstrated how expansive worlds could be paired with intimate character work and emotional resonance.',
-        highlight: 'Its frontier atmosphere made every journey feel like a living legend.'
+        description: 'Red Dead Redemption created a sprawling western with an unforgettable antihero and a deeply human story shaped by loss and freedom.',
+        whyItMatters: 'It showed that open worlds could feel intimate, morally complex, and emotionally resonant at once.',
+        highlight: 'Its frontier atmosphere and living world made every journey feel meaningful.'
     },
     {
         year: 2011,
-        title: 'The Elder Scrolls V: Skyrim',
-        studio: 'Bethesda Game Studios',
-        creator: 'Todd Howard',
-        image: 'assets/covers/2011-the-elder-scrolls-v-skyrim.jpg',
-        releaseDate: 'November 11, 2011',
-        genres: ['Action RPG', 'Open world'],
-        platforms: ['Windows', 'PS3', 'Xbox 360'],
-        rating: '9.0/10',
-        description: 'Skyrim gave players a sprawling fantasy world packed with quests, lore, and endless possibilities for discovery.',
-        whyItMatters: 'It became one of the most influential open-world RPGs ever released and inspired countless creators.',
-        highlight: 'Its freedom of exploration and modding support made it a timeless sandbox fantasy.'
+        title: 'Dark Souls',
+        studio: 'FromSoftware',
+        creator: 'Hidetaka Miyazaki',
+        image: 'assets/covers/2011-dark-souls.jpg',
+        releaseDate: 'September 22, 2011',
+        genres: ['Action RPG', 'Soulslike'],
+        platforms: ['PlayStation 3', 'Xbox 360', 'Windows'],
+        rating: '9.3/10',
+        description: 'Dark Souls introduced a demanding, atmospheric action RPG built around exploration, careful combat, and a mysterious world full of lore.',
+        whyItMatters: 'It transformed difficulty into a design philosophy and inspired an entire generation of action RPGs.',
+        highlight: 'Its interconnected level design and punishing combat made discovery feel both rewarding and terrifying.'
     },
     {
         year: 2012,
-        title: 'Journey',
-        studio: 'Thatgamecompany',
-        creator: 'Jenova Chen',
-        image: 'assets/covers/2012-journey.jpg',
-        releaseDate: 'March 13, 2012',
-        genres: ['Adventure', 'Indie'],
-        platforms: ['PS3', 'PS4', 'PS5'],
-        rating: '9.2/10',
-        description: 'Journey turned a simple travel experience into an emotional, wordless masterpiece about connection and discovery.',
-        whyItMatters: 'It showed that elegant design and restraint could make games feel deeply personal and universal.',
-        highlight: 'Its poetic presentation and anonymous online interactions created an unforgettable bond.'
+        title: 'Persona 4 Golden',
+        studio: 'Atlus',
+        creator: 'Katsura Hashino',
+        image: 'assets/covers/2012-persona-4-golden.jpg',
+        releaseDate: 'June 14, 2012',
+        genres: ['JRPG', 'Social sim'],
+        platforms: ['PlayStation Vita', 'Windows', 'Switch', 'PS4'],
+        rating: '9.1/10',
+        description: 'Persona 4 Golden combined a small-town mystery with stylish turn-based combat and a deeply compelling cast of friends.',
+        whyItMatters: 'It elevated the social-RPG format into one of the most emotionally resonant experiences of its generation.',
+        highlight: 'Its everyday life and supernatural investigation loop made the game feel both grounded and magical.'
     },
     {
         year: 2013,
@@ -203,67 +203,67 @@ const games = [
         image: 'assets/covers/2013-the-last-of-us.jpg',
         releaseDate: 'June 14, 2013',
         genres: ['Action-adventure', 'Survival'],
-        platforms: ['PS3', 'PS4'],
+        platforms: ['PlayStation 3'],
         rating: '9.4/10',
-        description: 'The Last of Us blended survival gameplay with an intimate, character-driven story about loss, love, and humanity.',
-        whyItMatters: 'It elevated narrative-driven games to a level that felt cinematic without losing interactivity.',
-        highlight: 'Its characters and emotional stakes made every encounter feel meaningful.'
+        description: 'The Last of Us blended survival gameplay with a heartbreakingly human story about love, loss, and the cost of staying alive.',
+        whyItMatters: 'It became a landmark in narrative-driven games and set a new standard for emotional storytelling.',
+        highlight: 'Its character work and environmental storytelling made every encounter feel personal and consequential.'
     },
     {
         year: 2014,
-        title: 'Dragon Age: Inquisition',
-        studio: 'BioWare',
-        creator: 'Mike Laidlaw',
-        image: 'assets/covers/2014-dragon-age-inquisition.jpg',
-        releaseDate: 'November 18, 2014',
-        genres: ['Action RPG', 'Fantasy'],
-        platforms: ['Windows', 'PS3', 'PS4', 'Xbox 360', 'Xbox One'],
-        rating: '8.8/10',
-        description: 'Inquisition brought tactical combat and party-based storytelling together in a rich fantasy campaign with vast scale.',
-        whyItMatters: 'It reminded players that party RPGs could still feel fresh and ambitious in a crowded era.',
-        highlight: 'Its world-state systems gave each playthrough a distinct sense of consequence.'
+        title: 'The Legend of Heroes: Trails of Cold Steel',
+        studio: 'Nihon Falcom',
+        creator: 'Masayoshi',
+        image: 'assets/covers/2014-the-legend-of-heroes-trails-of-cold-steel.jpg',
+        releaseDate: 'November 11, 2014',
+        genres: ['JRPG', 'Turn-based'],
+        platforms: ['PlayStation 3', 'PlayStation Vita'],
+        rating: '8.7/10',
+        description: 'Trails of Cold Steel delivered a thoughtful school-based RPG with dense worldbuilding, memorable school politics, and a rich cast of allies.',
+        whyItMatters: 'It introduced many players to a deeper, more literary style of JRPG storytelling.',
+        highlight: 'Its focus on dialogue, character relationships, and political intrigue made it stand apart.'
     },
     {
         year: 2015,
-        title: 'The Witcher 3: Wild Hunt',
-        studio: 'CD PROJEKT RED',
-        creator: 'Mateusz Tomaszkiewicz',
-        image: 'assets/covers/2015-the-witcher-3-wild-hunt.jpg',
-        releaseDate: 'May 19, 2015',
-        genres: ['Action RPG', 'Fantasy'],
-        platforms: ['Windows', 'PS4', 'Xbox One'],
+        title: 'Bloodborne',
+        studio: 'FromSoftware',
+        creator: 'Hidetaka Miyazaki',
+        image: '',
+        releaseDate: 'March 24, 2015',
+        genres: ['Action RPG', 'Soulslike'],
+        platforms: ['PlayStation 4'],
         rating: '9.3/10',
-        description: 'The Witcher 3 delivered a sweeping fantasy world filled with side quests, lore, and morally complex choices.',
-        whyItMatters: 'It became a landmark for open-world RPGs by blending exploration, narrative, and world design.',
-        highlight: 'Its side quests became so beloved that they transformed the expectation for content depth.'
+        description: 'Bloodborne fused gothic horror with fast, aggressive combat to create one of the most distinctive action RPGs of its generation.',
+        whyItMatters: 'It pushed the Soulslike formula toward greater speed, atmosphere, and menace.',
+        highlight: 'Its Victorian setting and relentless pacing made every encounter feel dangerous and thrilling.'
     },
     {
         year: 2016,
-        title: 'Overwatch',
-        studio: 'Blizzard Entertainment',
-        creator: 'Jeff Kaplan',
-        image: 'assets/covers/2016-overwatch.jpg',
-        releaseDate: 'May 24, 2016',
-        genres: ['Hero shooter', 'Team-based'],
-        platforms: ['Windows', 'PS4', 'Xbox One'],
-        rating: '9.0/10',
-        description: 'Overwatch brought a bright, accessible hero shooter to life with sharp teamwork, dynamic abilities, and a strong competitive identity.',
-        whyItMatters: 'It shaped the modern esports and live-service era by turning team play into a spectacle.',
-        highlight: 'Its hero roster and quick rounds made it instantly approachable yet deeply strategic.'
+        title: 'Dark Souls III',
+        studio: 'FromSoftware',
+        creator: 'Hidetaka Miyazaki',
+        image: 'assets/covers/2016-dark-souls-iii.jpg',
+        releaseDate: 'March 24, 2016',
+        genres: ['Action RPG', 'Soulslike'],
+        platforms: ['PlayStation 4', 'Xbox One', 'Windows'],
+        rating: '9.5/10',
+        description: 'Dark Souls III sharpened the series’ combat and world design into a more focused, elegant expression of the formula.',
+        whyItMatters: 'It capped off the trilogy with a refined version of its core ideas and a strong legacy of influence.',
+        highlight: 'Its boss battles and environmental storytelling made each area feel like a masterpiece of tension.'
     },
     {
         year: 2017,
-        title: 'The Legend of Zelda: Breath of the Wild',
-        studio: 'Nintendo',
-        creator: 'Eiji Aonuma',
-        image: 'assets/covers/2017-the-legend-of-zelda-breath-of-the-wild.jpg',
-        releaseDate: 'March 3, 2017',
-        genres: ['Action-adventure', 'Open world'],
-        platforms: ['Switch', 'Wii U'],
-        rating: '9.8/10',
-        description: 'Breath of the Wild redefined the action-adventure genre with a physics-driven world and striking freedom of exploration.',
-        whyItMatters: 'It influenced countless games by proving that systems-driven design could be both elegant and emotionally resonant.',
-        highlight: 'Its open-ended puzzles and emergent moments made every climb feel meaningful.'
+        title: 'Persona 5',
+        studio: 'Atlus',
+        creator: 'Katsura Hashino',
+        image: 'assets/covers/2017-persona-5.jpg',
+        releaseDate: 'September 15, 2017',
+        genres: ['JRPG', 'Social sim'],
+        platforms: ['PlayStation 4', 'PlayStation 3'],
+        rating: '9.3/10',
+        description: 'Persona 5 delivered a bold, stylish RPG about rebellion, friendship, and the power of self-expression.',
+        whyItMatters: 'It brought the series to a wider audience with a striking visual identity and a deeply memorable cast.',
+        highlight: 'Its flashy style and strong character dynamics made it feel like a true milestone for the genre.'
     },
     {
         year: 2018,
@@ -273,77 +273,77 @@ const games = [
         image: 'assets/covers/2018-red-dead-redemption-2.jpg',
         releaseDate: 'October 26, 2018',
         genres: ['Action-adventure', 'Western'],
-        platforms: ['PS4', 'Xbox One', 'Windows'],
+        platforms: ['PlayStation 4', 'Xbox One', 'Windows'],
         rating: '9.7/10',
         description: 'Red Dead Redemption 2 delivered a cinematic frontier story packed with rich worldbuilding, believable characters, and meticulous detail.',
         whyItMatters: 'It stands as one of the strongest examples of environmental storytelling and systemic world design.',
-        highlight: 'Its dynamic wildlife and characters made the world feel alive in every direction.'
+        highlight: 'Its dynamic wildlife and detailed world made every journey feel alive and meaningful.'
     },
     {
         year: 2019,
         title: 'Death Stranding',
         studio: 'Kojima Productions',
         creator: 'Hideo Kojima',
-        image: 'assets/covers/2019-death-stranding.jpg',
+        image: '',
         releaseDate: 'November 8, 2019',
         genres: ['Action', 'Walking sim'],
-        platforms: ['PS4', 'Windows'],
+        platforms: ['PlayStation 4', 'Windows'],
         rating: '8.7/10',
-        description: 'Death Stranding used a strange yet fascinating premise to explore connection, loneliness, and the power of human bonds.',
-        whyItMatters: 'It became a defining example of how unusual concepts can grow into a deeply memorable experience.',
-        highlight: 'Its asynchronous multiplayer and delivery loop created a uniquely reflective gameplay rhythm.'
+        description: 'Death Stranding explored connection, isolation, and human bonds through an unusual delivery-based structure that felt unlike anything else.',
+        whyItMatters: 'It became a defining example of how unusual concepts can grow into a memorable, deeply personal experience.',
+        highlight: 'Its asynchronous multiplayer and slow-burn pacing created a uniquely reflective gameplay rhythm.'
     },
     {
         year: 2020,
-        title: 'The Last of Us Part II',
-        studio: 'Naughty Dog',
-        creator: 'Neil Druckmann',
-        image: 'assets/covers/2020-the-last-of-us-part-ii.jpg',
-        releaseDate: 'June 19, 2020',
-        genres: ['Action-adventure', 'Survival'],
-        platforms: ['PS4'],
-        rating: '9.2/10',
-        description: 'The Last of Us Part II pushed narrative ambition further with an emotionally punishing story and brutally precise combat.',
-        whyItMatters: 'It sparked major conversations about themes, pacing, and the boundaries of interactive storytelling.',
-        highlight: 'Its commitment to emotional complexity made it one of the most debated releases of the decade.'
+        title: 'The Legend of Heroes: Trails into Reverie',
+        studio: 'Nihon Falcom',
+        creator: 'Masayoshi',
+        image: 'assets/covers/2020-the-legend-of-heroes-trails-into-reverie.jpg',
+        releaseDate: 'July 28, 2020',
+        genres: ['JRPG', 'Turn-based'],
+        platforms: ['Windows', 'PlayStation 4'],
+        rating: '8.4/10',
+        description: 'Trails into Reverie expanded the Trails saga with a dramatic narrative centered on political tension, personal relationships, and layered party dynamics.',
+        whyItMatters: 'It reinforced the series’ reputation for dense character work and long-form storytelling.',
+        highlight: 'Its sprawling cast and branching drama made every route feel expansive and consequential.'
     },
     {
         year: 2021,
+        title: 'Like a Dragon: Infinite Wealth',
+        studio: 'Ryu Ga Gotoku Studio',
+        creator: 'Masayoshi Yokoyama',
+        image: 'assets/covers/2021-like-a-dragon-infinite-wealth.jpg',
+        releaseDate: 'January 26, 2024',
+        genres: ['JRPG', 'Action-adventure'],
+        platforms: ['PlayStation 5', 'PlayStation 4', 'Windows', 'Xbox Series X/S'],
+        rating: '8.8/10',
+        description: 'Like a Dragon: Infinite Wealth brought the series into a brighter, more expansive adventure with heartfelt character drama and a strong sense of place.',
+        whyItMatters: 'It helped push the franchise into a new era of mainstream recognition without losing its identity.',
+        highlight: 'Its mix of heartfelt story, turn-based battles, and lively setting made it instantly memorable.'
+    },
+    {
+        year: 2022,
         title: 'Elden Ring',
         studio: 'FromSoftware',
         creator: 'Hidetaka Miyazaki',
-        image: 'assets/covers/2021-elden-ring.jpg',
-        releaseDate: 'February 25, 2021',
+        image: 'assets/covers/2022-elden-ring.jpg',
+        releaseDate: 'February 25, 2022',
         genres: ['Action RPG', 'Fantasy'],
-        platforms: ['Windows', 'PS4', 'PS5', 'Xbox One', 'Xbox Series X/S'],
+        platforms: ['Windows', 'PlayStation 4', 'PlayStation 5', 'Xbox One', 'Xbox Series X/S'],
         rating: '9.7/10',
         description: 'Elden Ring fused FromSoftware’s signature challenge with a vast open world full of secrets, lore, and vertical exploration.',
         whyItMatters: 'It brought the studio’s unique sensibility to an even wider audience without diluting its identity.',
         highlight: 'Its environmental storytelling and boss encounters made discovery feel mythical and dangerous.'
     },
     {
-        year: 2022,
-        title: 'God of War Ragnarök',
-        studio: 'Santa Monica Studio',
-        creator: 'Cory Barlog',
-        image: 'assets/covers/2022-god-of-war-ragnarok.jpg',
-        releaseDate: 'November 9, 2022',
-        genres: ['Action-adventure', 'Mythology'],
-        platforms: ['PS4', 'PS5'],
-        rating: '9.6/10',
-        description: 'Ragnarök expanded the emotional journey of Kratos and Atreus with breathtaking combat, rich mythology, and striking production values.',
-        whyItMatters: 'It proved that a long-running action series could still evolve into something deeply personal and modern.',
-        highlight: 'Its scale and emotional payoff made it a true showcase for cinematic action design.'
-    },
-    {
         year: 2023,
         title: "Baldur's Gate 3",
         studio: 'Larian Studios',
         creator: 'Swen Vincke',
-        image: "assets/covers/2023-baldurs-gate-3.jpg",
+        image: 'assets/covers/2023-baldurs-gate-3.jpg',
         releaseDate: 'August 3, 2023',
         genres: ['RPG', 'Fantasy'],
-        platforms: ['Windows', 'PS5', 'Xbox Series X/S'],
+        platforms: ['Windows', 'PlayStation 5', 'Xbox Series X/S'],
         rating: '9.8/10',
         description: 'Baldur’s Gate 3 delivered a rich, reactive RPG experience where choice, consequence, and party dynamics felt truly alive.',
         whyItMatters: 'It brought the D&D tradition into a new era of player-driven storytelling and tactical depth.',
@@ -351,17 +351,17 @@ const games = [
     },
     {
         year: 2024,
-        title: 'Astro Bot',
-        studio: 'Team Asobi',
-        creator: 'Nobuhiro Ootani',
-        image: 'assets/covers/2024-astro-bot.jpg',
-        releaseDate: 'September 6, 2024',
-        genres: ['Platformer', 'Adventure'],
-        platforms: ['PS5'],
-        rating: '9.5/10',
-        description: 'Astro Bot celebrates PlayStation history through joyful platforming, inventive level design, and delightful references that feel earned.',
-        whyItMatters: 'It reminds the industry that charm, precision, and celebration can still define a modern platformer.',
-        highlight: 'Its playful levels and heartfelt homage to PlayStation classics make it feel like a love letter to gaming itself.'
+        title: 'Metaphor: ReFantazio',
+        studio: 'Studio Zero',
+        creator: ' Katsura Hashino',
+        image: 'assets/covers/2024-metaphor-refantazio.jpg',
+        releaseDate: 'October 11, 2024',
+        genres: ['JRPG', 'Fantasy'],
+        platforms: ['Windows', 'PlayStation 4', 'PlayStation 5', 'Xbox Series X/S'],
+        rating: '9.1/10',
+        description: 'Metaphor: ReFantazio offered a striking fantasy RPG experience with a bold visual style, strong party chemistry, and a gripping political narrative.',
+        whyItMatters: 'It carried forward the spirit of Atlus’s best RPGs while presenting a new and distinctive world.',
+        highlight: 'Its unique art direction and layered themes made it feel both familiar and fresh.'
     }
 ];
 
@@ -377,6 +377,66 @@ const heroCollage = document.querySelector('.hero-collage');
 
 let selectedYear = 1999;
 
+function getInitialYear() {
+    const hashMatch = window.location.hash.match(/year-(\d{4})/);
+    return hashMatch ? Number(hashMatch[1]) : selectedYear;
+}
+
+function syncYearHash(year) {
+    const nextHash = `#year-${year}`;
+    if (window.location.hash !== nextHash) {
+        history.replaceState(null, '', nextHash);
+    }
+}
+
+function setSelectedYear(year, options = {}) {
+    selectedYear = year;
+    syncYearHash(year);
+    render();
+
+    if (options.scrollToDetails) {
+        document.getElementById('games').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function getImageCandidates(imagePath) {
+    const candidates = [imagePath];
+    const extensionMatch = imagePath.match(/\.(jpg|jpeg|png|webp|svg)$/i);
+
+    if (extensionMatch) {
+        const stem = imagePath.slice(0, -extensionMatch[0].length);
+        const fallbackExts = ['svg', 'jpg', 'jpeg', 'png', 'webp'];
+
+        fallbackExts.forEach((ext) => {
+            if (ext.toLowerCase() !== extensionMatch[1].toLowerCase()) {
+                candidates.push(`${stem}.${ext}`);
+            }
+        });
+    }
+
+    return [...new Set(candidates)];
+}
+
+function updateActiveNav() {
+    const scrollPosition = window.scrollY + 140;
+    const navLinks = Array.from(document.querySelectorAll('.menu a'));
+
+    navLinks.forEach((link) => {
+        const targetId = link.getAttribute('href')?.replace('#', '');
+        const section = targetId ? document.getElementById(targetId) : null;
+
+        if (!section) {
+            return;
+        }
+
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
+        link.classList.toggle('active', scrollPosition >= top && scrollPosition < bottom);
+    });
+}
+
+selectedYear = getInitialYear();
+
 function createYearButtons() {
     games.forEach((game) => {
         const button = document.createElement('button');
@@ -385,9 +445,7 @@ function createYearButtons() {
         button.textContent = game.year;
 
         button.addEventListener('click', () => {
-            selectedYear = game.year;
-            render();
-            document.getElementById('games').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            setSelectedYear(game.year, { scrollToDetails: true });
         });
 
         yearGrid.appendChild(button);
@@ -419,7 +477,7 @@ function renderResults() {
     const visibleGames = getVisibleGames(searchInput.value);
 
     if (visibleGames.length === 0) {
-        resultsList.innerHTML = '<div class="result-card"><strong>No matches found</strong><span>Try another genre, studio, or year.</span></div>';
+        resultsList.innerHTML = '<div class="result-card empty-state"><strong>No matches found</strong><span>Try another genre, studio, or year.</span></div>';
         resultsSummary.textContent = 'No results';
         return;
     }
@@ -438,8 +496,7 @@ function renderResults() {
 
     resultsList.querySelectorAll('.result-card').forEach((button) => {
         button.addEventListener('click', () => {
-            selectedYear = Number(button.getAttribute('data-year'));
-            render();
+            setSelectedYear(Number(button.getAttribute('data-year')));
         });
     });
 }
@@ -456,11 +513,13 @@ function renderGame() {
     const previousGame = currentIndex > 0 ? games[currentIndex - 1] : null;
     const nextGame = currentIndex < games.length - 1 ? games[currentIndex + 1] : null;
 
+    const imageCandidates = getImageCandidates(game.image);
+
     gameContainer.innerHTML = `
         <div class="detail-shell">
             <div class="detail-top">
                 <div class="detail-hero">
-                    <img src="${game.image}" alt="${game.title}">
+                    <img src="${imageCandidates[0]}" alt="${game.title}" data-image-candidates="${imageCandidates.join('|')}" data-image-index="0">
                     <div class="detail-overlay">
                         <div class="detail-badges">
                             <span class="meta-pill">${game.year}</span>
@@ -529,6 +588,24 @@ function renderGame() {
         </div>
     `;
 
+    const heroImage = gameContainer.querySelector('.detail-hero img');
+
+    if (heroImage) {
+        heroImage.addEventListener('error', () => {
+            const candidates = (heroImage.getAttribute('data-image-candidates') || '')
+                .split('|')
+                .filter(Boolean);
+            const nextIndex = Number(heroImage.dataset.imageIndex || 0) + 1;
+
+            if (nextIndex < candidates.length) {
+                heroImage.dataset.imageIndex = String(nextIndex);
+                heroImage.src = candidates[nextIndex];
+            } else {
+                heroImage.classList.add('is-fallback');
+            }
+        });
+    }
+
     gameContainer.querySelectorAll('.nav-button').forEach((button) => {
         button.addEventListener('click', () => {
             const direction = button.getAttribute('data-direction');
@@ -537,15 +614,18 @@ function renderGame() {
             const targetGame = games[targetIndex];
 
             if (targetGame) {
-                selectedYear = targetGame.year;
-                render();
+                setSelectedYear(targetGame.year);
             }
         });
     });
 }
 
 function renderYearButtons() {
-    document.querySelectorAll('.year').forEach((button) => button.classList.toggle('active', Number(button.textContent) === selectedYear));
+    document.querySelectorAll('.year').forEach((button) => {
+        const isActive = Number(button.textContent) === selectedYear;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+    });
 }
 
 function render() {
@@ -562,8 +642,27 @@ exploreBtn.addEventListener('click', () => {
     document.getElementById('years').scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
+document.addEventListener('keydown', (event) => {
+    const target = event.target;
+    if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) {
+        return;
+    }
+
+    const currentIndex = games.findIndex((entry) => entry.year === selectedYear);
+    if (event.key === 'ArrowRight') {
+        const nextGame = games[currentIndex + 1] || games[0];
+        setSelectedYear(nextGame.year);
+    }
+
+    if (event.key === 'ArrowLeft') {
+        const prevGame = games[currentIndex - 1] || games[games.length - 1];
+        setSelectedYear(prevGame.year);
+    }
+});
+
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 20);
+    updateActiveNav();
 
     if (hero && heroCollage) {
         const offset = window.scrollY * 0.08;
@@ -572,7 +671,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('mousemove', (event) => {
-    if (!hero) {
+    if (!hero || window.matchMedia('(hover: none)').matches) {
         return;
     }
 
@@ -587,4 +686,5 @@ window.addEventListener('mouseleave', () => {
     }
 });
 
+updateActiveNav();
 render();
