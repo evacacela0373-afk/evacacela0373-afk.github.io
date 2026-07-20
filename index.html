@@ -1,82 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming History Timeline</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Best Video Games by Year</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="page-glow"></div>
-    <div class="page-rays"></div>
-    <div class="particle-field" aria-hidden="true">
-        <span style="left: 10%; top: 15%; animation-duration: 18s;"></span>
-        <span style="left: 26%; top: 24%; animation-duration: 22s;"></span>
-        <span style="left: 67%; top: 18%; animation-duration: 19s;"></span>
-        <span style="left: 84%; top: 29%; animation-duration: 24s;"></span>
-        <span style="left: 16%; top: 74%; animation-duration: 21s;"></span>
-        <span style="left: 48%; top: 70%; animation-duration: 17s;"></span>
-        <span style="left: 78%; top: 80%; animation-duration: 23s;"></span>
-    </div>
-    <nav class="navbar">
-        <a class="logo" href="#">🎮 Gaming History</a>
-        <ul class="menu">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#years">Timeline</a></li>
-            <li><a href="#games">Explore</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <header class="hero" id="hero">
-        <div class="hero-collage" aria-hidden="true">
-            <div class="collage-layer layer-a"></div>
-            <div class="collage-layer layer-b"></div>
-            <div class="collage-layer layer-c"></div>
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-        </div>
-        <div class="hero-content">
-            <p class="hero-badge">PlayStation-inspired showcase</p>
-            <h1>GAMING HISTORY</h1>
-            <h2>1999 - 2024</h2>
-            <p>Journey through the landmark releases that redefined storytelling, design, and technology across the last 25 years.</p>
-            <div class="hero-actions">
-                <button id="exploreBtn" type="button">Explore the Timeline</button>
-                <a class="hero-link" href="#games">View Highlights</a>
-            </div>
-        </div>
-    </header>
+<!-- Navigation -->
 
-    <section id="years">
-        <h2>Select a Year</h2>
-        <p class="subtitle">Tap any year to spotlight a milestone release and move through the timeline with smooth, cinematic navigation.</p>
-        <div class="year-grid" aria-label="Years"></div>
-    </section>
+<nav>
 
-    <section id="games">
-        <h2>Browse the Catalog</h2>
-        <p class="subtitle">Search by title, studio, genre, or platform and open a storefront-style details experience for each classic release.</p>
-        <div class="game-toolbar">
-            <label class="search-field" for="searchInput">
-                <span>🔎</span>
-                <input id="searchInput" type="text" placeholder="Search games, genres, or platforms...">
-            </label>
-            <div id="resultsSummary" class="results-summary"></div>
-        </div>
-        <div class="game-shell">
-            <aside id="resultsList" class="results-list" aria-label="Game results"></aside>
-            <div id="gameContainer"></div>
-        </div>
-    </section>
+<div class="logo">
 
-    <footer id="contact">
-        <p>Crafted as a modern gaming history experience with replaceable placeholder art.</p>
-    </footer>
+🎮 Gaming History
 
-    <script src="scripts.js"></script>
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#years">Years</a></li>
+
+<li><a href="#games">Games</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<header class="hero">
+
+<div class="overlay"></div>
+
+<img src="images/hero.jpg" class="heroImage">
+
+<div class="heroContent">
+
+<h1>
+
+BEST VIDEO GAMES
+
+<span>BY YEAR</span>
+
+</h1>
+
+<p>
+
+Discover the greatest video game released every year from 1999 to 2024.
+
+</p>
+
+<button id="exploreButton">
+
+Explore Games
+
+</button>
+
+</div>
+
+</header>
+
+<!-- Search -->
+
+<section class="searchSection">
+
+<input
+
+type="text"
+
+placeholder="Search a game or year..."
+
+id="search"
+
+>
+
+</section>
+
+<!-- Years -->
+
+<section id="years">
+
+<h2>Select a Year</h2>
+
+<div class="yearsGrid">
+
+</div>
+
+</section>
+
+<!-- Games -->
+
+<section id="games">
+
+<h2>Game Information</h2>
+
+<div id="gamesContainer">
+
+<!-- JavaScript will create everything -->
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+Created by Estiven © 2026
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
